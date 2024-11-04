@@ -2,16 +2,20 @@
   Як ви вкажете типи для аргументів і значень цих функцій, що повертаються?
 */
 
-function showMessage(message) {
+// Функція приймає рядок і повертає значення типу void
+function showMessage(message: string): void {
   console.log(message);
 }
 
-function calc(num1, num2) {
+// Функція приймає два числових аргументи і повертає їх суму 
+function calc(num1: number, num2: number): number {
   return num1 + num2;
 }
 
-function customError() {
+// Функція, яка не повертає значення, але генерує помилку 
+function customError(): never {
   throw new Error('Error');
 }
+
 
 export {};
